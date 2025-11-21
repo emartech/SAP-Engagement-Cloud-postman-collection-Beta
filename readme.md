@@ -83,7 +83,7 @@ Your environment should look like this:
 1. Select "Postman Collection" for the collection type
 1. Select the file "sap_engagement_cloud_postman_collection.json" from the files you downloaded previously and press open:
 
-    ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-file-selector.png)
+    ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/file-selector-oauth.png)
 
 1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno. A good option may be your Documents folder, or a project folder where you keep your work on SAP Engagement Cloud. After you do so, the API collection will be visible in Bruno.
 
