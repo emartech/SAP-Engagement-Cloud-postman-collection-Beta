@@ -3,9 +3,9 @@
 
 **Written in the Postman format and tested with Bruno**
 
-This document describes the Emarsys Suite API v3, which uses OpenID Connect (OAuth 2.0 client credentials grant) authentication. 
+This document describes the SAP Engagement Cloud Suite API v3, which uses OpenID Connect (OAuth 2.0 client credentials grant) authentication. 
 
-- Introduction to Emarsys API: [link](https://help.sap.com/docs/SAP_EMARSYS/8bf21e3e3ad3475bb9e25de1e0ac3d86/fdf6b8c874c11014ab07d03045e4962a.html)
+- Introduction to SAP Engagement Cloud API: [link](https://help.sap.com/docs/SAP_EMARSYS/8bf21e3e3ad3475bb9e25de1e0ac3d86/fdf6b8c874c11014ab07d03045e4962a.html)
 - Creating your API credentials: [link](https://help.sap.com/docs/SAP_EMARSYS/5d44574160f44536b0130abf58cb87cc/fdf4b58974c110149353957a3e7ef453.html#openid-connect)
 
 ### For an open source alternative to Postman, this collection is also compatible with Bruno, as described [here](#Using-this-collection-with-Bruno).
@@ -29,26 +29,26 @@ To create your API user, follow [this documentation guide for OpenID Connect](ht
   ![Postman import button](./readme-images/import-button.png)
 1. Select The upload files option:
     ![Postman upload files option](./readme-images/upload-files-button.png)
-1. Select the file "Emarsys Postman Collection" from the downloaded files
-    ![Postman file selector with "Emarsys Postman Collection" highlighted](./readme-images/file-selector-oauth.png)
+1. Select the file "SAP Engagement Cloud Postman Collection" from the downloaded files
+    ![Postman file selector with "SAP Engagement Cloud Postman Collection" highlighted](./readme-images/file-selector-oauth.png)
 1. Finally, select the import button to confirm and the package will be fully installed!
  
 ### Setting up your API user in Postman
 
-1. In Postman, click on the folder for the Emarsys API collection, then select the Authorization tab
+1. In Postman, click on the folder for the SAP Engagement Cloud API collection, then select the Authorization tab
 1. Scroll down to the "Configure New Token" section where you will see red text in the boxes for Client ID and Client Secret
-![The program Postman, with the Authorization configuration panel open for the collection called "Emarsys - Suite and Sales APIs - V3. There is a large red circle around the parameters for Client ID and Client Secret, which highlights the red text {{OIDC_ClientID}} and {{OIDC_Secret}}, respectively."](./readme-images/postman-oauth-configuration.png)
-1. Hover your mouse over the red text for {{OIDC_ClientID}} to see the options of where to store this variable. Click the Environment section to save the variable. If you see text that says "No environment selected", click "Create One" and give it a name like "Emarsys environment"
+![The program Postman, with the Authorization configuration panel open for the collection called "SAP Engagement Cloud - Suite and Sales APIs - V3. There is a large red circle around the parameters for Client ID and Client Secret, which highlights the red text {{OIDC_ClientID}} and {{OIDC_Secret}}, respectively."](./readme-images/postman-oauth-configuration.png)
+1. Hover your mouse over the red text for {{OIDC_ClientID}} to see the options of where to store this variable. Click the Environment section to save the variable. If you see text that says "No environment selected", click "Create One" and give it a name like "SAP Engagement Cloud environment"
 
-    ![The program Postman, with the Authorization configuration panel open for the collection called "Emarsys - Suite and Sales APIs - V3. That page is scrolled to view the parameters for Client ID and Client Secret, with placeholder text of {{OIDC_ClientID}} and {{OIDC_Secret}}. Above those fields is a dialog window that says "add variable to" with options for Environment, Collection, Globals, and Vault. There is a large red circle around the option "Create One" next to the Environment option."](./readme-images/postman-configure-new-environment.png)
-1. In the "Enter Value" checkbox, enter the value you saved from the Emarsys API user creation screen. Do this for Client ID and Client Secret. The text for each will turn from red to blue once it's configured correctly
-    **Note** If you are using [SAP Cloud Identities](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials#openid-connect-sap-cloud-identity) to manage your Emarsys API credentials, you will need to replace the Access Token URL as well
+    ![The program Postman, with the Authorization configuration panel open for the collection called "SAP Engagement Cloud - Suite and Sales APIs - V3. That page is scrolled to view the parameters for Client ID and Client Secret, with placeholder text of {{OIDC_ClientID}} and {{OIDC_Secret}}. Above those fields is a dialog window that says "add variable to" with options for Environment, Collection, Globals, and Vault. There is a large red circle around the option "Create One" next to the Environment option."](./readme-images/postman-configure-new-environment.png)
+1. In the "Enter Value" checkbox, enter the value you saved from the SAP Engagement Cloud API user creation screen. Do this for Client ID and Client Secret. The text for each will turn from red to blue once it's configured correctly
+    **Note** If you are using [SAP Cloud Identities](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials#openid-connect-sap-cloud-identity) to manage your SAP Engagement Cloud API credentials, you will need to replace the Access Token URL as well
 1. Scroll to the bottom of the window and click the Orange "Get New Access Token" button. Postman will take a moment to make sure your credentials work, then report it was successful. Click "Proceed" on this window, then click "Use Token"
 1. Your credentials are now configured!
 
 ### Configuring your Base URL
 
-In the Engagement Cloud edition of the Emarsys APIs, you will need to specify the API endpoint that your account uses for your requests. During the beta, that endpoint will always be `https://api.sap.emarsys.net/api`. In the future, you will be able to find it in the same page as your API users' permissions.
+In the SAP Engagement Cloud, you will need to specify the API endpoint that your account uses for your requests. During the beta, that endpoint will always be `https://api.sap.emarsys.net/api`. In the future, you will be able to find it in the same page as your API users' permissions.
 
 Here's how to set the endpoint in your environment:
 
@@ -81,11 +81,11 @@ Your environment should look like this:
     ![Graphic displaying the location of the "Import Collection" button in Bruno's UI](./readme-images/bruno-import-button.png)
 
 1. Select "Postman Collection" for the collection type
-1. Select the file "Emarsys_postman_collection.json" from the files you downloaded previously and press open:
+1. Select the file "sap_engagement_cloud_postman_collection.json" from the files you downloaded previously and press open:
 
     ![Graphic displaying the file selector for importing Postman collection files into Bruno](./readme-images/bruno-file-selector.png)
 
-1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno. A good option may be your Documents folder, or a project folder where you keep your work on Emarsys. After you do so, the API collection will be visible in Bruno.
+1. Bruno will then ask you where you'd like to save the imported collection. Select any location on your computer you would like to store your work in Bruno. A good option may be your Documents folder, or a project folder where you keep your work on SAP Engagement Cloud. After you do so, the API collection will be visible in Bruno.
 
 1. Begin setting up your authentication to the API by clicking on the name of the collection in the left-hand menu and then selecting the tab "Auth". In that page, apply the following settings:
 
@@ -115,7 +115,7 @@ The required variables are:
 
 The baseUrl variable is the endpoint for API requests, which will always be `https://api.sap.emarsys.net/api` during the beta.
 
-In the Engagement Cloud edition of the Emarsys APIs, you will need to specify the API endpoint that your account uses for your requests. During the beta, that endpoint will always be `https://api.sap.emarsys.net/api`. In the future, you will be able to find it in the same page as your API users' permissions.
+In the Engagement Cloud edition of the SAP Engagement Cloud APIs, you will need to specify the API endpoint that your account uses for your requests. During the beta, that endpoint will always be `https://api.sap.emarsys.net/api`. In the future, you will be able to find it in the same page as your API users' permissions.
 
 > [!NOTE] 
-> If you are using [SAP Cloud Identities](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials#openid-connect-sap-cloud-identity) to manage your Emarsys API credentials, you will need to add your Access Token URL in the variable "OIDC_SCI_HOST"
+> If you are using [SAP Cloud Identities](https://help.emarsys.com/hc/en-us/articles/22036625729554-Security-settings-API-Credentials#openid-connect-sap-cloud-identity) to manage your SAP Engagement Cloud API credentials, you will need to add your Access Token URL in the variable "OIDC_SCI_HOST"
