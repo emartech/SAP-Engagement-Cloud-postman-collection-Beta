@@ -4282,7 +4282,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"business_area_id\": [\n    \"DE\"\n  ]\n}",
+													"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"businessAreaIds\": [\n    \"DE\"\n  ]\n}",
 													"options": {
 														"raw": {
 															"headerFamily": "json",
@@ -4320,7 +4320,7 @@
 														],
 														"body": {
 															"mode": "raw",
-															"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"business_area_id\": [\n    \"DE\"\n  ]\n}",
+															"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"businessAreaIds\": [\n    \"DE\"\n  ]\n}",
 															"options": {
 																"raw": {
 																	"headerFamily": "json",
@@ -4368,7 +4368,7 @@
 														],
 														"body": {
 															"mode": "raw",
-															"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"primaryEmail\": \"old@example.com\",\n  \"business_area_id\": [\n    \"DE\"\n  ],\n  \"cdpId\": \"abc-def\",\n  \"genderCode\": \"1\",\n  \"additionalSystemFields\": {\n    \"app1DeviceId\": \"deviceId\"\n  },\n  \"extensionFields\": {\n    \"shoeSize\": 38\n  }\n}",
+															"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"primaryEmail\": \"old@example.com\",\n  \"businessAreaIds\": [\n    \"DE\"\n  ],\n  \"cdpId\": \"abc-def\",\n  \"genderCode\": \"1\",\n  \"additionalSystemFields\": {\n    \"app1DeviceId\": \"deviceId\"\n  },\n  \"extensionFields\": {\n    \"shoeSize\": 38\n  }\n}",
 															"options": {
 																"raw": {
 																	"headerFamily": "json",
